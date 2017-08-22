@@ -3,19 +3,36 @@ import { Component } from '@angular/core';
 @Component({
     selector:'sandbox',
     templateUrl:`./sandbox.component.html`,
-    styles:[`
-        p{
-            color:green;
-            background-color:yellow;
-        }
+    styleUrls:['./sandbox.component.css']
+    // styles:[`
+    //     p{
+    //         color:green;
+    //         background-color:yellow;
+    //     }
 
-    `]
+    // `]
 
 })
 
 export class SandboxComponent{
     name = 'Sachin Saini';
     age = 20;
+    people = ['john', 'doe', 'naruto', 'uzumaki'];
+    peopleObjectArray = [
+        {
+            firstName:'sachin',
+            lastName:'saini'
+        },
+        {
+            firstName:'naruto',
+            lastName:'uzumaki'
+        },
+        {
+            firstName:'itachi',
+            lastName:'uchiha'
+        }
+
+    ]
     person = {
         firstName:'Sabhya',
         lastName:'Verma',
