@@ -40,6 +40,11 @@
 
 
  -->
-
+<!-- 
  <h1 [class.isGreen] = "isGreen" > This is green class</h1>
  <h1 [ngClass] = "currentClasses" > green as well as uppercase </h1>
+
+ <h1> {{isGreen ? imageUrl : 'world'}} </h1> -->
+
+
+<h1 [ngStyle]="currentStyles"  >if isGreen is true it will be green else red</h1>

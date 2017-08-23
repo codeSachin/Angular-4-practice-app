@@ -28,7 +28,7 @@ export class SandboxComponent{
     isGreen = true;
     isUpper = true;
     currentClasses = {};
-    
+    currentStyles = {};
     imageUrl = 'http://lorempixel.com/400/200';
     showName:boolean = true;
     switchNo:number = 5;
@@ -64,6 +64,11 @@ export class SandboxComponent{
             isGreen:true,
             isUpper:true
         };
+
+        this.currentStyles = {
+            'color':this.isGreen ? 'blue' : 'red',
+            'font-size':'50px'
+        }
     }
 
     showAge(){
