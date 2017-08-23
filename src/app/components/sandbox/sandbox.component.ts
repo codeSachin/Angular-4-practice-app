@@ -17,8 +17,9 @@ import { Component } from '@angular/core';
 export class SandboxComponent{
     name = 'Sachin Saini';
     age = 20;
+    imageUrl = 'http://lorempixel.com/400/200';
     showName:boolean = true;
-    switchNo:number = 2;
+    switchNo:number = 5;
     people = ['john', 'doe', 'naruto', 'uzumaki'];
     peopleObjectArray = [
         {

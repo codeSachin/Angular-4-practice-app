@@ -20,15 +20,24 @@
 </li>
 </ul> -->
 
-<h3 *ngIf = showName> inside if statement </h3>
+<!-- <h3 *ngIf = showName> inside if statement </h3>
 <h3 *ngIf = !showName> inside else statement</h3>
 
 <div [ngSwitch] = "switchNo">
     <h1 *ngSwitchCase = "'1'"> inside 1 </h1>
     <h2 *ngSwitchCase = "'2'"> inside 2</h2>
+    <h1 *ngSwitchDefault> 5 kahan se aa gaya go and change it in sandbox.component.ts GO NOW </h1>
 
 
-</div>
+</div> -->
+<!-- 3 ways to bind properties seebelow 3 divs bro -->
+<div><img src= {{imageUrl}}></div>
+<div><img [src]="imageUrl" alt="random image"></div>
+<div><img bind-src="imageUrl" alt=""></div>
+
+<h1>this image is taken from:  <span [textContent]="imageUrl"></span>   </h1>
+<h1>this image is taken from:  <span textContent="{{imageUrl}}"></span>   </h1>
+
 
 
 
