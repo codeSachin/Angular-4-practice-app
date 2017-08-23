@@ -31,7 +31,7 @@
 
 </div> -->
 <!-- 3 ways to bind properties seebelow 3 divs bro -->
-<div><img src= {{imageUrl}}></div>
+<!-- <div><img src= {{imageUrl}}></div>
 <div><img [src]="imageUrl" alt="random image"></div>
 <div><img bind-src="imageUrl" alt=""></div>
 
@@ -39,5 +39,7 @@
 <h1>this image is taken from:  <span textContent="{{imageUrl}}"></span>   </h1>
 
 
+ -->
 
-
+ <h1 [class.isGreen] = "isGreen" > This is green class</h1>
+ <h1 [ngClass] = "currentClasses" > green as well as uppercase </h1>

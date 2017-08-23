@@ -3,20 +3,32 @@ import { Component } from '@angular/core';
 @Component({
     selector:'sandbox',
     templateUrl:`./sandbox.component.html`,
-    styleUrls:['./sandbox.component.css']
-    // styles:[`
-    //     p{
-    //         color:green;
-    //         background-color:yellow;
-    //     }
+    //styleUrls:['./sandbox.component.css']
+    styles:[`
+        p{
+            color:green;
+            background-color:yellow;
+        }
+        .isGreen
+        {
+            color:green;
+        }
+        .isUpper
+        {
+            text-transform:uppercase;
+        }
 
-    // `]
+    `]
 
 })
 
 export class SandboxComponent{
     name = 'Sachin Saini';
     age = 20;
+    isGreen = true;
+    isUpper = true;
+    currentClasses = {};
+    
     imageUrl = 'http://lorempixel.com/400/200';
     showName:boolean = true;
     switchNo:number = 5;
@@ -48,6 +60,10 @@ export class SandboxComponent{
         console.log('constructor ran...');
         this.person.age=21;
         this.customerProperties();
+        this.currentClasses = {
+            isGreen:true,
+            isUpper:true
+        };
     }
 
     showAge(){
