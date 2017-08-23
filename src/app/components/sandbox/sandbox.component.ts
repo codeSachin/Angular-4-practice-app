@@ -18,7 +18,7 @@ export class SandboxComponent{
     name = 'Sachin Saini';
     age = 20;
     showName:boolean = true;
-    switchNo:number = 1;
+    switchNo:number = 2;
     people = ['john', 'doe', 'naruto', 'uzumaki'];
     peopleObjectArray = [
         {
