@@ -17,6 +17,8 @@ import { Component } from '@angular/core';
 export class SandboxComponent{
     name = 'Sachin Saini';
     age = 20;
+    showName:boolean = true;
+    switchNo:number = 1;
     people = ['john', 'doe', 'naruto', 'uzumaki'];
     peopleObjectArray = [
         {
