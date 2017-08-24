@@ -67,7 +67,8 @@ export class SandboxComponent{
 
         this.currentStyles = {
             'color':this.isGreen ? 'blue' : 'red',
-            'font-size':'50px'
+            'font-size':'50px',
+            'text-transform':this.isGreen ? 'uppercase' : 'lowercase'
         }
     }
 

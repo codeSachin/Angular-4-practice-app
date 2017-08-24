@@ -46,5 +46,5 @@
 
  <h1> {{isGreen ? imageUrl : 'world'}} </h1> -->
 
-
+<h1 [style.color]="isGreen ? 'yellow' : 'red'" > yellow text</h1>
 <h1 [ngStyle]="currentStyles"  >if isGreen is true it will be green else red</h1>
