@@ -2,11 +2,11 @@
 <p> <b>My name is {{person.firstName}} {{person.lastName}} and i am {{person.age}} years old</b></p>
 <h3> your age after 10 years will be {{ showAge() }}</h3>
 <h3> {{ 1+1 }}</h3>
-<p>{{ 'santorini' }}</p>
-<h3> customer id is {{ customer.id }} </h3>
+<p>{{ 'santorini' }}</p> -->
+<!-- <h3> customer id is {{ customer.id }} </h3>
 <h3> customer name is {{ customer.name }} </h3>
-<h3> customer email is {{ customer.email }} </h3> -->
-<!-- 
+<h3> customer email is {{ customer.email }} </h3>
+
 <ul>
     <li *ngFor = "let person of people; let i = index">
         {{i+1  }} {{person}}
@@ -18,9 +18,9 @@
     {{i+1  }}  {{object.firstName}}  {{object.lastName}}
 
 </li>
-</ul> -->
+</ul>
 
-<!-- <h3 *ngIf = showName> inside if statement </h3>
+<h3 *ngIf = showName> inside if statement </h3>
 <h3 *ngIf = !showName> inside else statement</h3>
 
 <div [ngSwitch] = "switchNo">
@@ -39,12 +39,21 @@
 <h1>this image is taken from:  <span textContent="{{imageUrl}}"></span>   </h1>
 
 
- -->
-<!-- 
+
+
  <h1 [class.isGreen] = "isGreen" > This is green class</h1>
  <h1 [ngClass] = "currentClasses" > green as well as uppercase </h1>
 
- <h1> {{isGreen ? imageUrl : 'world'}} </h1> -->
+ <h1> {{isGreen ? imageUrl : 'world'}} </h1>
 
 <h1 [style.color]="isGreen ? 'yellow' : 'red'" > yellow text</h1>
-<h1 [ngStyle]="currentStyles"  >if isGreen is true it will be green else red</h1>
+<h1 [ngStyle]="currentStyles"  >if isGreen is true it will be green else red</h1> -->
+
+<h1>My birthday is on {{birthday}}  <br>   <span style="font-size:50px;color:red">without date pipe</span></h1>
+<h1>My birthday is on {{ birthday | date }} </h1> <span style="font-size:50px;color:green">with date pipe</span>
+<h1> {{ birthday | date:"dd-MM-yy" }} </h1>
+<h1>i was born on  {{ birthday | date:"yyyy" }}</h1>
+<p>i love {{cake}} </p>
+<p> i love {{'cake'}} </p>
+<p> i love {{'cake' | uppercase}} </p>
+<p> i love {{'CAKE'| lowercase}} </p>

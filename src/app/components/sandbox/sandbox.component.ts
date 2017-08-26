@@ -6,8 +6,11 @@ import { Component } from '@angular/core';
     //styleUrls:['./sandbox.component.css']
     styles:[`
         p{
+            font-size:40px;
+            margin:0px;
+            padding:0px;
             color:green;
-            background-color:yellow;
+            // background-color:yellow;
         }
         .isGreen
         {
@@ -29,6 +32,9 @@ export class SandboxComponent{
     isUpper = true;
     currentClasses = {};
     currentStyles = {};
+    cake='britannia';
+    birthday = new Date(1997,7,17);
+
     imageUrl = 'http://lorempixel.com/400/200';
     showName:boolean = true;
     switchNo:number = 5;
