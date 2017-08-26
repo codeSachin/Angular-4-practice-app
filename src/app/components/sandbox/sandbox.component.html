@@ -49,7 +49,7 @@
 <h1 [style.color]="isGreen ? 'yellow' : 'red'" > yellow text</h1>
 <h1 [ngStyle]="currentStyles"  >if isGreen is true it will be green else red</h1> -->
 
-<h1>My birthday is on {{birthday}}  <br>   <span style="font-size:50px;color:red">without date pipe</span></h1>
+<!-- <h1>My birthday is on {{birthday}}  <br>   <span style="font-size:50px;color:red">without date pipe</span></h1>
 <h1>My birthday is on {{ birthday | date }} </h1> <span style="font-size:50px;color:green">with date pipe</span>
 <h1> {{ birthday | date:"dd-MM-yy" }} </h1>
 <h1>i was born on  {{ birthday | date:"yyyy" }}</h1>
@@ -57,3 +57,10 @@
 <p> i love {{'cake'}} </p>
 <p> i love {{'cake' | uppercase}} </p>
 <p> i love {{'CAKE'| lowercase}} </p>
+<h1> My b'day is {{birthday | date | uppercase | lowercase}} </h1> -->
+
+<h1> balance is {{'500' | currency}} </h1>
+<h1> balance is {{'500' | currency:"GBP":"1"}} </h1>   
+<h1> balance is {{'500' | currency:"USD":"1"}} </h1>
+<h1> balance is {{'500' | currency:"INR":"1"}} </h1>   <!-- This is used for INR and 2nd argument is to indicate thatw e want to use symbol for INR  -->
+<h1> balance is {{'500' | currency:"INR"}} </h1>
