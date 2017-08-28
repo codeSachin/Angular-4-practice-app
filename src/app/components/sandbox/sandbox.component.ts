@@ -92,6 +92,7 @@ export class SandboxComponent{
 
         return this.customer;
     }
+    myStr:string = "Hello World";
 
     fireEvent(e)
     {
@@ -100,6 +101,11 @@ export class SandboxComponent{
         // console.log(e);
         // console.log(e.target.id);
         console.log(e.type);
+    }
+    changeValue(e)
+    {
+        this.myStr = "Goodbye World";
+        //e.myStr = "bas bas";    
     }
 }
 
