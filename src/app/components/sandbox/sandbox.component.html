@@ -59,10 +59,14 @@
 <p> i love {{'CAKE'| lowercase}} </p>
 <h1> My b'day is {{birthday | date | uppercase | lowercase}} </h1> -->
 
-<h1> balance is {{'500' | currency}} </h1>
+<!-- <h1> balance is {{'500' | currency}} </h1>
 <h1> balance is {{'500' | currency:"GBP":"1"}} </h1>   
 <h1> balance is {{'500' | currency:"USD":"1"}} </h1>
-<h1> balance is {{'500' | currency:"INR":"1"}} </h1>   <!-- This is used for INR and 2nd argument is to indicate thatw e want to use symbol for INR  -->
-<h1> balance is {{'500' | currency:"INR"}} </h1>
+<h1> balance is {{'500' | currency:"INR":"1"}} </h1>   This is used for INR and 2nd argument is to indicate thatw e want to use symbol for INR 
+<h1> balance is {{'500' | currency:"INR"}} </h1> -->
 
-<button (click)="fireEvent()" >Click Event</button>
+<button (click)="fireEvent($event)" id="myButton" >Click Event</button>
+<br><br>
+<button (mouseover)="fireEvent($event)" >hover over me</button>
+<br><br>
+<button (drag)="fireEvent($event)" >drag event</button>

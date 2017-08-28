@@ -93,9 +93,13 @@ export class SandboxComponent{
         return this.customer;
     }
 
-    fireEvent()
+    fireEvent(e)
     {
-        console.log("fired a click event wooohoo");
+        // console.log("fired a click event wooohoo");
+        // console.log(message);
+        // console.log(e);
+        // console.log(e.target.id);
+        console.log(e.type);
     }
 }
 
