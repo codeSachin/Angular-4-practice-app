@@ -109,8 +109,10 @@ export class SandboxComponent{
         this.boolValue = !this.boolValue;
         console.log(e);    
     }
+    myChangedValue = 'Hello';
     keyEvent(e)
     {
+        this.myChangedValue = e.target.value;
         console.log(e.type);
     }
 }
