@@ -93,7 +93,7 @@ export class SandboxComponent{
         return this.customer;
     }
     myStr:string = "Hello World";
-
+    boolValue:boolean = true;
     fireEvent(e)
     {
         // console.log("fired a click event wooohoo");
@@ -105,7 +105,13 @@ export class SandboxComponent{
     changeValue(e)
     {
         this.myStr = "Goodbye World";
-        //e.myStr = "bas bas";    
+        //e.myStr = "bas bas";
+        this.boolValue = !this.boolValue;
+        console.log(e);    
+    }
+    keyEvent(e)
+    {
+        console.log(e.type);
     }
 }
 

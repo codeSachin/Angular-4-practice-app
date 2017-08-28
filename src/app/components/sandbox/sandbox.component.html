@@ -73,4 +73,29 @@
 
 <h1>Hello World</h1>
 <button (click)="changeValue(this)">change Value</button>
-<h1> {{myStr}} </h1>
+<h1 *ngIf="boolValue"> {{myStr}} </h1>
+
+<div>
+    <input type="text" (keypress)="keyEvent($event)">
+</div>
+<div>
+    <input type="text" (keydown)="keyEvent($event)">
+</div>
+<div>
+    <input type="text" (keyup)="keyEvent($event)">
+</div>
+<div>
+    <input type="text" (cut)="keyEvent($event)">
+</div>
+<div>
+    <input type="text" (copy)="keyEvent($event)">
+</div>
+<div>
+    <input type="text" (paste)="keyEvent($event)">
+</div>
+<div>
+    <input type="text" (focus)="keyEvent($event)">
+</div>
+<div>
+    <input type="text" (blur)="keyEvent($event)">
+</div>
