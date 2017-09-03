@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
     selector:'sandbox',
     templateUrl:`./sandbox.component.html`,
     //styleUrls:['./sandbox.component.css']
-    styles:[`
+    styles:[` 
         p{
             font-size:40px;
             margin:0px;
