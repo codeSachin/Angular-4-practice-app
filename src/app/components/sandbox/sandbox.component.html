@@ -107,7 +107,7 @@
 <!-- <h1> {{isGreen ? imageUrl : 'world'}} </h1> -->
 <h1>Form with Name and Age</h1>
 <div class="container">
-    <form>
+    <form (submit)="submitted()">
         <div  class="form-group">
             <label>Name : </label>
             <input type="text" [(ngModel)]="name" name="name" class="form-control">

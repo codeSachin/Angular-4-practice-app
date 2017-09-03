@@ -78,6 +78,11 @@ export class SandboxComponent{
         }
     }
 
+    submitted()
+    {
+        var x = document.getElementsByClassName("form-control");
+        
+    }
     // showAge(){
     //     return this.person.age+10;
     // }
