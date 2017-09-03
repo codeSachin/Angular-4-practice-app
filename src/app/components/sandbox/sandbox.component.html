@@ -44,7 +44,8 @@
  <h1 [class.isGreen] = "isGreen" > This is green class</h1>
  <h1 [ngClass] = "currentClasses" > green as well as uppercase </h1>
 
- <h1> {{isGreen ? imageUrl : 'world'}} </h1>
+
+
 
 <h1 [style.color]="isGreen ? 'yellow' : 'red'" > yellow text</h1>
 <h1 [ngStyle]="currentStyles"  >if isGreen is true it will be green else red</h1> -->
@@ -71,7 +72,7 @@
 <br><br>
 <button (drag)="fireEvent($event)" >drag event</button> -->
 
-<h1>Hello World</h1>
+<!-- <h1>Hello World</h1>
 
 <h1> {{myChangedValue}} </h1>
 
@@ -101,4 +102,22 @@
 </div>
 <div>
     <input type="text" (blur)="keyEvent($event)">
+</div> -->
+
+<!-- <h1> {{isGreen ? imageUrl : 'world'}} </h1> -->
+<h1>Form with Name and Age</h1>
+<div class="container">
+    <form>
+        <div  class="form-group">
+            <label>Name : </label>
+            <input type="text" [(ngModel)]="name" name="name" class="form-control">
+        </div>
+        <div  class="form-group">
+                <label>Age : </label>
+                <input type="number" [(ngModel)]="age" name="age" class="form-control">
+        </div>
+        <input type="submit" value="Submit" class= "btn btn-success">
+    </form>
+    <h3>NAME:  {{name}} </h3>
+    <h3>AGE: {{age}} </h3>
 </div>
