@@ -78,10 +78,13 @@ export class SandboxComponent{
         }
     }
 
+    users:string[] = ['John Doe','Naruto Uzumaki', 'Sasuke Uchiha'];
     submitted()
     {
-        var x = document.getElementsByClassName("form-control");
-        
+        console.log(this.users);
+        this.users.push(this.name);
+        //for clearing the input name after submitting do below line
+        this.name = '';
     }
     // showAge(){
     //     return this.person.age+10;
