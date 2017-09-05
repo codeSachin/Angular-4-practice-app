@@ -34,7 +34,11 @@ export class SandboxComponent{
     currentStyles = {};
     // cake='britannia';
     birthday = new Date(1997,7,17);
-
+    user = {
+        name:'',
+        email:'',
+        phone:''
+    }
     imageUrl = 'http://lorempixel.com/400/200';
     // showName:boolean = true;
     // switchNo:number = 5;
@@ -79,6 +83,15 @@ export class SandboxComponent{
     }
 
     users:string[] = ['John Doe','Naruto Uzumaki', 'Sasuke Uchiha'];
+
+    onSubmit({value, valid}){
+        if(valid){
+            console.log(value);
+        } else {
+            console.log('Form is invalid');
+        }
+       }
+
     submitted()
     {
         console.log(this.users);
@@ -122,6 +135,7 @@ export class SandboxComponent{
     // {
     //     this.myChangedValue = e.target.value;
     //     console.log(e.type);
+    //     console.log(e.target.value);
     // }
 }
 
