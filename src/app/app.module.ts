@@ -4,11 +4,14 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { SandboxComponent } from './components/sandbox/sandbox.component';
+import { MysandboxComponent } from './components/mysandbox/mysandbox.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SandboxComponent
+    SandboxComponent,
+    MysandboxComponent
+    
   ],
   imports: [
     BrowserModule,
