@@ -41,6 +41,9 @@ export class MysandboxComponent{
       this.users = data; //we directly pasted the data into our users array. because online API delivers direct data simultaneously.
     });
   }
+
+
+  
   submitted(){
     this.dataservice.addUser(this.user).subscribe((user) => {
       console.log(user);
