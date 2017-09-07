@@ -42,16 +42,18 @@ export class MysandboxComponent{
     });
   }
 
-    deleted(id){
+    deleted(id,e){
       this.dataservice.deleteUser(id).subscribe(res =>{
         console.log(res);
       });
-      for(let i=0;i<this.users.length;i++){
-        if(id == this.users[i].id)
-          {
-            this.users.splice(i,1);
-          }
-      }
+      // for(let i=0;i<this.users.length;i++){
+      //   if(id == this.users[i].id)
+      //     {
+      //       this.users.splice(i,1);
+      //     }
+      // }
+      e.target.parentNode.style.display='none';
+      //do above commented thing or this above line it is the same thing
     }
 
 
