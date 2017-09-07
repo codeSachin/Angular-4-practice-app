@@ -42,13 +42,25 @@ export class MysandboxComponent{
     });
   }
 
+    deleted(id){
+      this.dataservice.deleteUser(id).subscribe(res =>{
+        console.log(res);
+      });
+      for(let i=0;i<this.users.length;i++){
+        if(id == this.users[i].id)
+          {
+            this.users.splice(i,1);
+          }
+      }
+    }
 
-  
+
   submitted(){
     this.dataservice.addUser(this.user).subscribe((user) => {
       console.log(user);
       this.users.unshift(user);
     });
+    
   }
 
 }

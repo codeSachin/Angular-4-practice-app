@@ -24,5 +24,6 @@
         <div *ngFor = "let user of users">
           <h6> User Name: {{user.name}} </h6>
           <p> Use Email :{{user.email}} </p>
+          <button (click)="deleted(user.id)"class="btn btn-danger btn-sm">Delete</button>
         </div>
       </div>
