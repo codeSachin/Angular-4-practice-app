@@ -16,6 +16,7 @@ import { UserDetailsComponent } from './components/user-details/user-details.com
 const appRoutes:Routes = [
   {path:'', component:HomeComponent},
   {path:'about', component:AboutComponent},
+  {path:'user/:id', component:UserDetailsComponent}
 
 ];
 
